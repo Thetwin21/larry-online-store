@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LarryFashion</title>
+    <link rel="stylesheet" href="./style/onlinecart.css">
+    <script src="https://kit.fontawesome.com/2c348bb9ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <!-- bg cover -->
+        <div class="bg-cover"></div>
+        <!-- cart container -->
+        
+        <table class="table-content" id="table">
+            <thead>
+                <tr>
+                    <!-- <th class="table-shrink"></th> -->
+                    <th class="table-shrink">
+                        <h3>Item</h3>
+                    </th>
+                    <th class="table-shrink"></th>
+                    <th class="table-shrink">
+                        <h3>Price</h3>
+                    </th>
+                    <th class="table-shrink">
+                        <h3>Qnty</h3>
+                    </th>
+                    <th class="table-shrink">TOTAL</th>
+                    <th class="table-shrink">
+                        <div class="toggle" >
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tbody>
+                <th class="table-shrink"></th>
+                <th class="table-shrink">
+                    <h3>Grand <br> Total</h3>
+                </th>
+                <th class="table-shrink">
+                  <p id="ntotal">$0</p>
+                </th>
+                <th class="table-shrink"></th>
+                <th class="table-shrink"><a href="login.html"><Button>Check Out</Button></a></th>
+                <th class="table-shrink"></th>
+              
+                
+            </tbody>
+        </table>
+        
+        
+         <header id="header" class="header">
+                <div class="logo">
+                    <h1 class="img-box"><img src="./images/20210829_021809-removebg-preview.png" alt=""></h1>
+                    <span class="search">
+                       <input type="text" class="search">
+                       <button class="btn-search">
+                           <i class="fas fa-search"></i>
+                        </button>
+                    </span>
+
+                    <span class="text">
+                        <h4>Everyday free shipping <i class="fas fa-truck"></i></h4>
+                    </span>
+                    <div class="cart">
+                        <div class="card-show" onclick="onClick()">
+                            <p><span id="item-count" style="color: red; font-weight: 700;">0</span><i class="fas fa-shopping-cart"></i> </p>
+                        </div>
+                        
+                        <span>
+                            <a href="login.html">Sign up</a>
+                        </span>
+                    </div>
+                        
+                </div>
+                <nav class="nav">
+                    <span class="home"></span>
+                    <ul class="navbar">
+                        <li>Fashion</li>
+                        <li>Tshirt</li>
+                        <li>scarf</li>
+                        <li class="none">shoes</li>
+                        <li class="none">heels</li>
+                        <li>sneakers</li>
+                    </ul>
+                    <div>
+                        <h4 class="socio">
+                            <a href="#">HOT DEALS</a>
+                        </h4>
+                        <span class="social">
+                            <p>
+                                <a href="https://www.facebook.com/sylvestnationz" target="_blank"><i class="fab fa-facebook"> </i> </a>
+                            </p>
+                            <p>
+                                <a href="https://twitter.com/Thetwin2121?s=08" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/p/CStXTA2AqLt/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                            </p>
+                        </span>
+                    </div>
+                   
+                    
+                </nav>
+        </header>
+
+        <!--  -->
+
+        <main>
+            <div class="sub-main">
+                <div class="text-content">
+                    <div class="line-box">
+                        <h3>30% Discount</h3>
+                         <div class="line"></div>
+                    </div>
+                    <h1>Trending fashion <br> collection</h1>
+                    <button class="addbtn"><a href="#shop">Shop Now</a></button>
+                </div>
+                <div class="block">
+            
+                </div>
+
+            </div>
+        </main>
+
+        <!--second slide  -->
+        <div class="second-slide">
+            <div class="market-icons">
+                <div class="first item">
+                    <span><i class="fas fa-plane-departure"></i></span>
+                    <h4>worldwide shipping</h4>
+                    <p>Delivery worldwide ,no place is a barrier. Order Now</p>
+                </div>
+                <div class="second item">
+                    <span><i class="fas fa-sync"></i></span>
+                    <h4>Return Rate</h4>
+                    <p>30 days warranty return policy and very fast refund . Tearms And Conidtion applies.</p>
+                </div>
+                <div class="third item">
+                    <span><i class="fas fa-hand-holding-usd"></i></span>
+            
+                    <h4>Easy Payment</h4>
+                    <p>You can easily pay with your card or bank transfer. Also with Crypto currency.</p>
+                </div>
+                <div class="fourth item">
+                    <span><i class="fas fa-headphones-alt"></i></span>
+                    <h4>Customer Support </h4>
+                    <p>Our customer care service is always open . Drop your commention/suggestion in our email.</p>
+                </div>
+
+            </div>
+            <div class="discounts">
+                <div class="first item" id="1">
+                    <div class="img-box">
+                         <img src="./images/1630197937220-removebg-preview.png" alt="">
+                    </div>
+                    <div class="text-content">
+                        <div class="text">
+                            <p>25% discount</p>
+                            <br>
+                            <h3>Leader saddle <br>Bag Style</h3>
+                            <br>
+                            <button class="addbtn"><a href="#shop">Shop Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second item" id="2">
+                    <div class="img-box">
+                         <img src="./images/1630197858773-removebg-preview.png" alt="">
+                    </div>
+                    <div class="text-content">
+                        <div class="text">
+                            <p>30% discount</p>
+                            <br>
+                            <h3>Adidas sneakers <br>new design</h3> 
+                            <br>     
+                            <button class="addbtn"><a href="#shop">Shop Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third slide -->
+
+        <div class="third-slide">
+            <!-- third slide side-container -->
+
+          <div class="side-container" id="shop">
+             <div class="heading">
+                 <div class="header">
+                     <h3>shop By</h3>
+                 </div>
+                 <div class="category">
+                     <h4>CATEGORY</h4>
+                     <ul>
+                         <li><a>Mens cloth</a></li>
+                         <li><a>Babies Set</a></li>
+                         <li><a>Sneakers</a></li>
+                         <li><a>Bags</a></li>
+                         <li><a>Female cloth</a></li>
+                     </ul>
+  
+                 </div>
+                
+             </div>
+           <!-- best selling -->
+           <div class="best-selling"> 
+                <div class="header">
+                    <h3>Best Selling</h3>
+                </div> 
+                <!-- .......best selling .......... -->
+                <div class="best-selling-content">
+                    <!-- ................ -->
+                    <div class="item categor" data-category="mens">
+                        <img src="./images/images (28).jpeg" alt="">
+                        
+                        <div class="text">
+                            <h4>Jean Cardigan</h4>
+                            <p class="price">$560</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <!-- ..................... -->
+                    <div class="item categor" data-category="ladies">
+                        <img src="./images/915a1daf07fbfb82c0c2bbe5060b4e94.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Ladies Cardigan</h4>
+                            <p class="price">$560</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+
+                    <!-- ................ -->
+                    <div class="item categor" data-category="mens">
+                        <img src="./images/db168d1381c956ee7259fdfb48c677c2.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Jean Cardigan</h4>
+                            <p class="price">$560</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <!-- ...................... -->
+                    <div class="item categor" data-category="shoes">
+                        <img src="./images/a14ae781e03a98b88a6d10ca763ef4d6.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Jean Cardigan</h4>
+                            <p class="price">$560</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <!-- ................. -->
+                    <div class="item categor" data-category="ladies">
+                        <img src="./images/261b87859f7da12480328536a2df1aaa.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Fermes set</h4>
+                            <p class="price">$980</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+
+                    <!-- ............... -->
+                    <div class="item categor" data-category="mens">
+                        <img src="./images/9df36210b5a620e8f7574b3b4d4ba6f4.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Fermes set</h4>
+                            <p class="price">$980</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+
+                    <!-- .................. -->
+                    <div class="item categor" data-category="shoes">
+                        <img src="./images/9c1905bf6fc9024565d38f29917792f5.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Jean Cardigan</h4>
+                            <p class="price">$560</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <!-- ........ -->
+                    <div class="item categor" data-category="ladies">
+                        <img src="./images/f82bcb66d685f8eb2655c0bfd8dc47f6.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Wesleys set</h4>
+                            <p class="price">$500</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <!-- ........ -->
+                    <div class="item categor" data-category="babies">
+                            <img src="./images/f12c1a592e428c775fd1af0d1f9ed565.jpg" alt="">
+                        
+                        <div class="text">
+                            <h4>Brumo baby set</h4>
+                            <p class="price">$600</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+
+          <!-- third slide main container -->
+            <div class="main-container">
+                <div class="filter">
+                    <p>sort by</p>
+                        <!-- Dropdown -->
+                        <label class="drop">
+                            <input type="checkbox" id="target-drop-example"> 
+                            <span class="control">Filter</span> 
+                    
+                            <!-- Items -->
+                            <ul class="drop-items" id="drop-items">
+                                <li class="item-drop active" data-id="all"> All</li>
+                                <li class="item-drop" data-id="mens"> Mens</li>
+                                <li class="item-drop" data-id="babies"> Babies</li>
+                                <li class="item-drop" data-id="bags"> Bags</li>
+                                <li class="item-drop" data-id="ladies"> Ladies</li>
+                                
+                            </ul>
+                    
+                            <!-- Alternative to close dropdown with click out -->
+                            <label for="target-drop-example" class="overlay-close"></label>
+                    
+                        </label>
+
+                </div>
+                <!-- submain container -->
+              <div class="sub-main">
+                <div class="item categor" data-category="babies" >
+                    <img src="./images/053a6dc79e250ebd16ef84f6557daf33.jpg" alt="">
+                    <div>
+                        <h4>sweden Sandals</h4>
+                        <p class="price">$200</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="mens">
+                        <img src="./images/1630211615429.jpg" alt="">
+                    <div>
+                        <h4>Sedin Coat</h4>
+                        <p class="price">$400</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                        
+                </div>
+                <div class="item categor" data-category="babies" category="3">
+                    <img src="./images/0c1d4f2fd3e43e0de96c199dc480ebd4.jpg" alt="">
+                    <div>
+                        <h4>Babies set</h4>
+                        <p class="price">$320</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="ladies">
+                    <img src="./images/ade5be61499eefe9cfda8378e3f5b3aa.jpg" alt="">
+                    <div>
+                        <h4>Jordan joggers</h4>
+                        <p class="price">$160</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="ladies">
+                    <img src="./images/d16bdadc8037d990af19d84600611b69.jpg" alt="">
+                    <div>
+                        <h4>Femy gown</h4>
+                        <p class="price">$700</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="babies">
+                    <img src="./images/11dca25fa107a34bc404641ed0b9e04a.jpg" alt="">
+                    <div>
+                        <h4>Limes pack</h4>
+                        <p class="price">$190</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="bags">
+                    <img src="./images/106a428827db3719e4b6fe79baf42085.jpg" alt="">
+                    <div>
+                        <h4>Gasco fermes</h4>
+                        <p class="price">$70</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="shoe">
+                    <img src="./images/18dfc682b0619c50213ef9c8e40e3065.jpg" alt="">
+                    <div>
+                        <h4>Nike Air</h4>
+                        <p class="price">$400</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="ladies">
+                    <img src="./images/5897792abffa9494e9ebc71856dce030.jpg" alt="">
+                    <div>
+                        <h4>Frando gown</h4>
+                        <p class="price">$640</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="shoe">
+                    <img src="./images/5b5a43c780aa25680534d18db7af3ee8.jpg" alt="">
+                    <div>
+                        <h4>Limosno</h4>
+                        <p class="price">$380</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="bags">
+                    <img src="./images/1fa2a169eddb8f8fea1f3ceb1f5e8f70.jpg" alt="">
+                    <div>
+                        <h4>Sweder bag</h4>
+                        <p class="price">$80 </p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item categor" data-category="shoe">
+                    <img src="./images/c0d6e4499be4509c9f30e45a6de4ff6e.jpg" alt="">
+                    <div>
+                        <h4>Adidas Stan</h4>
+                        <p class="price">$270</p>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+
+               </div>
+                 
+            </div>
+        </div> 
+
+       <!-- filter -->
+       <div class="forth-slide">
+           <div class="service">
+               <div class="heading">
+                <h4>Our Service</h4>
+                <div class="line"></div>
+               </div>
+               <ul>
+                   <li>Delivery</li>
+                   <li>shipping </li>
+                   <li>Returns</li>
+                   <li>Terms And Condition</li>
+                   <li>Specials</li>
+               </ul>
+           </div>
+      
+          <div class="extras">
+           <div class="heading">
+            <h4>Extras</h4>
+            <div class="line"></div>
+           </div>
+           <ul>
+               <li>Contact Us</li>
+               <li>Returns</li>
+               <li>Specials</li>
+               <li>Brands</li>
+               <li>Gift Voucher</li>
+              
+          </div>
+          <div class="account">
+           <div class="heading">
+            <h4>My Account</h4>
+            <div class="line"></div>
+           </div>
+           <ul>
+               <li>My Orders</li>
+               <li>My Credit Slip</li>
+               <li>My address</li>
+            <li>My Personal Info</li>
+           
+            </ul>
+           </div>
+           <div class="contact">
+               <div class="heading">
+                <h4>Contact </h4>
+                <div class="line"></div>
+               </div>
+               <div class="input-box">
+                <input type="email" name="" placeholder="email@example.com" id="">
+                <input type="password" name="" placeholder="password" id="">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+               </div>
+           </div>
+        </div>
+        <footer>
+            <p>Built with <span style="color: red;"> &#10084; </span>  by Sylvester. <br> &copy; copyright Detwins Innovations, 2022.</p>
+        </footer>
+       
+
+    </div>
+
+<script src="./script/online.js"></script>
+</body>
+</html>
+    
