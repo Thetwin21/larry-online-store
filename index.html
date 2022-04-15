@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <div class="container" id="container">
+    <div class="container">
         <!-- bg cover -->
         <div class="bg-cover"></div>
         <!-- cart container -->
@@ -60,18 +60,12 @@
         
          <header id="header" class="header">
                 <div class="logo">
-                    <h1 class="img-box"><img src="./images/20210829_021809-removebg-preview.png" alt=""></h1>
-                    <span class="search">
-                       <input type="text" class="search">
-                       <button class="btn-search">
-                           <i class="fas fa-search"></i>
-                        </button>
-                    </span>
+                    <div class="img-box"><img src="./images/20210829_021809-removebg-preview.png" alt=""></div>
 
-                    <span class="text">
-                        <h4>Everyday free shipping <i class="fas fa-truck"></i></h4>
-                    </span>
                     <div class="cart">
+                        <span class="text">
+                            <h4>Everyday free shipping <i class="fas fa-truck"></i></h4>
+                        </span>
                         <div class="card-show" onclick="onClick()">
                             <p><span id="item-count" style="color: red; font-weight: 700;">0</span><i class="fas fa-shopping-cart"></i> </p>
                         </div>
@@ -88,8 +82,8 @@
                         <li>Fashion</li>
                         <li>Tshirt</li>
                         <li>scarf</li>
-                        <li class="none">shoes</li>
-                        <li class="none">heels</li>
+                        <li>shoes</li>
+                        <li>heels</li>
                         <li>sneakers</li>
                     </ul>
                     <div>
@@ -108,27 +102,19 @@
                             </p>
                         </span>
                     </div>
-                   
-                    
                 </nav>
         </header>
 
         <!--  -->
 
         <main>
-            <div class="sub-main">
-                <div class="text-content">
-                    <div class="line-box">
-                        <h3>30% Discount</h3>
-                         <div class="line"></div>
-                    </div>
-                    <h1>Trending fashion <br> collection</h1>
-                    <button class="addbtn"><a href="#shop">Shop Now</a></button>
+            <div class="text-content">
+                <div class="line-box">
+                    <h3>30% Discount</h3>
+                     <div class="line"></div>
                 </div>
-                <div class="block">
-            
-                </div>
-
+                <h1>Trending fashion <br> collection</h1>
+                <button class="addbtn"><a href="#shop">Shop Now</a></button>
             </div>
         </main>
 
@@ -164,13 +150,12 @@
                          <img src="./images/1630197937220-removebg-preview.png" alt="">
                     </div>
                     <div class="text-content">
-                        <div class="text">
-                            <p>25% discount</p>
-                            <br>
-                            <h3>Leader saddle <br>Bag Style</h3>
-                            <br>
-                            <button class="addbtn"><a href="#shop">Shop Now</a></button>
-                        </div>
+                        <p>25% discount</p>
+                        <br>
+                        <h3>Leader saddle <br>Bag Style</h3>
+                        <br>
+                        <button class="addbtn"><a href="#shop">Shop Now</a></button>
+                       
                     </div>
                 </div>
                 <div class="second item" id="2">
@@ -178,13 +163,11 @@
                          <img src="./images/1630197858773-removebg-preview.png" alt="">
                     </div>
                     <div class="text-content">
-                        <div class="text">
-                            <p>30% discount</p>
-                            <br>
-                            <h3>Adidas sneakers <br>new design</h3> 
-                            <br>     
-                            <button class="addbtn"><a href="#shop">Shop Now</a></button>
-                        </div>
+                        <p>30% discount</p>
+                        <br>
+                        <h3>Adidas sneakers <br>new design</h3> 
+                        <br>     
+                        <button class="addbtn"><a href="#shop">Shop Now</a></button>
                     </div>
                 </div>
             </div>
@@ -196,11 +179,11 @@
             <!-- third slide side-container -->
 
           <div class="side-container" id="shop">
-             <div class="heading">
-                 <div class="header">
+              <div class="heading">
+                  <div class="header">
                      <h3>shop By</h3>
-                 </div>
-                 <div class="category">
+                  </div>
+                  <div class="category">
                      <h4>CATEGORY</h4>
                      <ul>
                          <li><a>Mens cloth</a></li>
@@ -209,17 +192,16 @@
                          <li><a>Bags</a></li>
                          <li><a>Female cloth</a></li>
                      </ul>
-  
-                 </div>
+                  </div>
                 
-             </div>
+              </div>
            <!-- best selling -->
-           <div class="best-selling"> 
-                <div class="header">
-                    <h3>Best Selling</h3>
-                </div> 
-                <!-- .......best selling .......... -->
-                <div class="best-selling-content">
+              <div class="best-selling"> 
+                  <div class="header">
+                     <h3>Best Selling</h3>
+                  </div> 
+                  <!-- .......best selling .......... -->
+                 <div class="best-selling-content">
                     <!-- ................ -->
                     <div class="item categor" data-category="mens">
                         <img src="./images/images (28).jpeg" alt="">
@@ -452,8 +434,8 @@
        <div class="forth-slide">
            <div class="service">
                <div class="heading">
-                <h4>Our Service</h4>
-                <div class="line"></div>
+                   <h4>Our Service</h4>
+                   <div class="line"></div>
                </div>
                <ul>
                    <li>Delivery</li>
@@ -462,46 +444,45 @@
                    <li>Terms And Condition</li>
                    <li>Specials</li>
                </ul>
-           </div>
+            </div>
       
-          <div class="extras">
-           <div class="heading">
-            <h4>Extras</h4>
-            <div class="line"></div>
-           </div>
-           <ul>
-               <li>Contact Us</li>
-               <li>Returns</li>
-               <li>Specials</li>
-               <li>Brands</li>
-               <li>Gift Voucher</li>
-              
-          </div>
-          <div class="account">
-           <div class="heading">
-            <h4>My Account</h4>
-            <div class="line"></div>
-           </div>
-           <ul>
-               <li>My Orders</li>
-               <li>My Credit Slip</li>
-               <li>My address</li>
-            <li>My Personal Info</li>
-           
-            </ul>
-           </div>
-           <div class="contact">
-               <div class="heading">
-                <h4>Contact </h4>
-                <div class="line"></div>
-               </div>
-               <div class="input-box">
-                <input type="email" name="" placeholder="email@example.com" id="">
-                <input type="password" name="" placeholder="password" id="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Submit</button>
-               </div>
-           </div>
+             <div class="extras">
+                 <div class="heading">
+                    <h4>Extras</h4>
+                    <div class="line"></div>
+                 </div>
+                 <ul>
+                     <li>Contact Us</li>
+                     <li>Returns</li>
+                     <li>Specials</li>
+                     <li>Brands</li>
+                     <li>Gift Voucher</li>
+                 </ul>
+             </div>
+             <div class="account">
+                 <div class="heading">
+                    <h4>My Account</h4>
+                    <div class="line"></div>
+                 </div>
+                 <ul>
+                     <li>My Orders</li>
+                     <li>My Credit Slip</li>
+                     <li>My address</li>
+                     <li>My Personal Info</li>
+                  </ul>
+             </div>
+              <div class="contact">
+                  <div class="heading">
+                     <h4>Contact </h4>
+                     <div class="line"></div>
+                  </div>
+                  <div class="input-box">
+                     <input type="email" name="" placeholder="email@example.com" id="">
+                     <input type="password" name="" placeholder="password" id="">
+                     <textarea name="" id="" cols="30" rows="10"></textarea>
+                     <button type="submit">Submit</button>
+                  </div>
+              </div>
         </div>
         <footer>
             <p>Built with <span style="color: red;"> &#10084; </span>  by Sylvester. <br> &copy; copyright Detwins Innovations, 2022.</p>
