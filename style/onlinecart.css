@@ -500,10 +500,11 @@ main a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 15px;
+  padding: 10px 15px;
   background: #fff;
   height: 30px;
   width: 100%;
+  overflow: hidden;
 }
 
 /* third slide submain */
