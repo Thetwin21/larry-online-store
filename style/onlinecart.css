@@ -81,7 +81,7 @@ button {
 
 .table-content {
   display: none;
-  position: absolute;
+  position: fixed;
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
@@ -220,7 +220,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 0 5px;
-  padding-right: 40px;
   width: 100%;
 }
 .header .navbar li {
@@ -699,6 +698,79 @@ footer {
   padding: 8px 0;
   font-family: "Poppins", sans-serif;
 }
+  /* login section */
+  .form-container {
+    display: grid;
+    background: url("../images/1648640186583.jpg") center/cover no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container .form-content {
+    position: relative;
+    display: flex;
+  }
+  
+  .form-container .img-container {
+    display: none;
+  }
+  
+  .form-container form {
+    /* position: absolute; */
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 30px rgb(26, 22, 22);
+    border-radius: 10px;
+  }
+  
+  .form-container .input input {
+    height: 2.5rem;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 2px 30px #999;
+  }
+  
+  .form-container span {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+  
+  .form-container .forgot-password {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .forgot-password .check {
+    display: inline-block;
+  }
+  
+  .form-container button {
+    padding: 10px;
+    background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
+    color: #fff;
+    font-weight: 900;
+    width: 75px;
+  }
+  
+  .form-container a {
+    color: rgb(13, 17, 236);
+  }
+  
+
 
 @media (max-width: 768px) {
   .second-slide .discounts .item {
@@ -716,70 +788,8 @@ footer {
       width: 100%;
       height: 100%;
     }
-  /* login section */
-  .form-container {
-    display: grid;
-    background: url("../images/1648640186583.jpg") center/cover no-repeat;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-container .form-content {
-    position: relative;
-    display: flex;
-  }
-  .form-container .img-container {
-    display: none;
-  }
-
-  .form-container form {
-    /* position: absolute; */
-    display: flex;
-    font-weight: 900;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 2px 30px rgb(26, 22, 22);
-    border-radius: 10px;
-  }
-  .form-container .input input {
-    height: 2.5rem;
-    width: 300px;
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    box-shadow: 0 2px 30px #999;
-  }
-  .form-container span {
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
-  }
-  .form-container .forgot-password {
-    display: flex;
-    margin: 15px 0;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .forgot-password .check {
-    display: inline-block;
-  }
-  .form-container button {
-    padding: 10px;
-    background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
-    color: #fff;
-    font-weight: 900;
-    width: 75px;
-  }
-  .form-container a {
-    color: rgb(13, 17, 236);
-  }
 }
+
 @media (min-width: 769px) {
   .table-content {
     margin: 25px 0;
@@ -829,105 +839,6 @@ footer {
   .third-slide .side-container .heading .header {
     width: 100%;
   }
-
-  /* login section */
-  .form-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #fff;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    /* padding: 50px; */
-  }
-  .form-container .form-content {
-    position: relative;
-    display: flex;
-  }
-  .form-container form {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 24rem;
-    height: 60vh;
-    top: 15%;
-    right: -2%;
-    background: #fff;
-    box-shadow: 0 2px 30px rgb(26, 22, 22);
-    border-radius: 10px;
-    z-index: 5;
-  }
-  .form-container .input input {
-    height: 2.5rem;
-    width: 300px;
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    box-shadow: 0 2px 30px #999;
-  }
-  .form-container span {
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
-  }
-  .form-container .img-container {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
-  }
-  .form-container .img-container a {
-    color: #fff;
-  }
-  .form-container .img-container .img-box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .form-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .form-container .img-container .img-box::before {
-    content: "Larry Fashion";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #000;
-    /* background: rgb(255, 1, 120); */
-    width: 100%;
-    height: 75%;
-  }
-  .form-container .forgot-password {
-    display: flex;
-    margin: 15px 0;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .forgot-password .check {
-    display: inline-block;
-  }
-  .form-container button {
-    padding: 10px;
-    background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
-    color: #fff;
-    font-weight: 900;
-    width: 75px;
-  }
-  .form-container a {
-    color: rgb(13, 17, 236);
-  }
   .forth-slide {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -946,12 +857,115 @@ footer {
     gap: 1.2rem;
   }
 }
-@media (min-width: 900px) {
-  .form-container form {
+@media (min-width: 915px) {
+  /* .form-container form {
     height: 70vh;
     width: 90%;
     right: -20px;
-  }
+  } */
+    /* login section */
+    .form-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #fff;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      /* padding: 50px; */
+    }
+    
+    .form-container .form-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .form-container form {
+      padding: 20px;
+      width: 24rem;
+    }
+    
+    .form-container .input input {
+      height: 2.5rem;
+      width: 300px;
+      border-radius: 10px;
+      padding: 10px;
+      border: none;
+      box-shadow: 0 2px 30px #999;
+    }
+    
+    .form-container span {
+      display: flex;
+      flex-direction: column;
+      line-height: 2rem;
+    }
+    
+    .form-container .img-container {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
+      height: 100vh;
+    }
+    
+    .form-container .img-container a {
+      color: #fff;
+    }
+    
+    .form-container .img-container .img-box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .form-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .form-container .img-container .img-box::before {
+      content: "Larry Fashion";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #000;
+      /* background: rgb(255, 1, 120); */
+      width: 100%;
+      height: 75%;
+    }
+    
+    .form-container .forgot-password {
+      display: flex;
+      margin: 15px 0;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .forgot-password .check {
+      display: inline-block;
+    }
+    
+    .form-container button {
+      padding: 10px;
+      background: linear-gradient(to top, rgb(54, 53, 53), rgb(26, 22, 22));
+      color: #fff;
+      font-weight: 900;
+      width: 75px;
+    }
+    
+    .form-container a {
+      color: rgb(13, 17, 236);
+    }
 }
 @media (max-width: 450px) {
   main .text-content h1 {
