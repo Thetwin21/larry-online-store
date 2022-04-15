@@ -146,10 +146,6 @@ button:hover {
 .card-show i {
   font-size: 1.3rem;
 }
-/* .cart-icon {
-  position: relative;
-  margin: 0 5px;
-} */
 .count-cart {
   position: absolute;
   font-size: 0.8rem;
@@ -465,10 +461,7 @@ main a {
   padding-top: 10px;
   padding-left: 10px;
 }
-/* .third-slide .main-container .img-container {
-  position: relative;
-  overflow: hidden;
-} */
+
 
 .favourite .fa-heart {
   /* color: rgba(5, 0, 0, 0.295); */
@@ -504,7 +497,6 @@ main a {
   background: #fff;
   height: 30px;
   width: 100%;
-  overflow: hidden;
 }
 
 /* third slide submain */
