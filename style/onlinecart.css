@@ -21,6 +21,11 @@ body {
   font-weight: normal;
   background: rgb(247, 238, 220);
 }
+body::before {
+  content: "";
+  display: block;
+  height: 60px;
+}
 
 table h1 {
   font-family: "Oswald", sans-serif;
@@ -189,10 +194,17 @@ button:hover {
   object-fit: cover;
 }
 .logo {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background: rgb(247, 238, 220);
+  height: 40px;
+  padding-top: 20px ;
+  padding-bottom: 8px ;
+  top: 0;
+  z-index: 10;
 }
 
 /* navbar stylibg */
@@ -548,7 +560,7 @@ main a {
   padding: 0.6rem 0;
 }
 .drop input[type="checkbox"]:checked ~ .control {
-  z-index: 99;
+  z-index: 9;
   box-shadow: 0 0 0 2px #5055b1;
 }
 .drop input[type="checkbox"]:checked ~ .control:after {

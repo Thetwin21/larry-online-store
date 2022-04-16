@@ -24,11 +24,13 @@ toggle.addEventListener('click',()=> {
 // add to cart buttons
 addBtns.forEach(addBtn => {
    addBtn.addEventListener('click',addCart)
+   
 })
 
 // add items to cart fxn
 function addCart(e) {
       const parentImg = e.target.parentElement.parentElement
+       
       // new image
       const newImg = parentImg.children[0].src;
     //   item name
@@ -50,6 +52,7 @@ function addCart(e) {
     maincontainer.append(itemsContainer);
     const addItem = parseInt(itemCount.textContent) + 1;
     itemCount.textContent = addItem;
+    
 
     grandPrice()
 }
@@ -115,5 +118,8 @@ let categors = document.querySelectorAll('.categor');
   })
   }
 })
+if(itemCount.textContent > 0){
+  alert('added')
+}
 
 // end of filter items
