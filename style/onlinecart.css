@@ -194,6 +194,9 @@ button:hover {
 .form-container .logo {
   position: absolute;
 }
+.forgot-password .card-show {
+  display: none;
+}
 /* logo styling */
 
 .logo .img-box img {
