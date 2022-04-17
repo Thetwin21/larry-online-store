@@ -186,6 +186,14 @@ button:hover {
   height: 6rem;
   overflow: hidden;
 }
+.form-container .img-box {
+  width: 8rem;
+  height: 6rem;
+  overflow: hidden;
+}
+.form-container .logo {
+  position: absolute;
+}
 /* logo styling */
 
 .logo .img-box img {
